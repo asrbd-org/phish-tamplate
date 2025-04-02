@@ -1,5 +1,19 @@
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Stay Updated - Latest Viral Content',
+  description: 'Get the latest viral videos, Facebook blue verification, and free diamond top-ups. Stay updated with trending content from around the world.',
+  keywords: ['viral videos', 'Facebook blue verification', 'free diamond', 'trending content', 'updates'],
+  openGraph: {
+    title: 'Stay Updated - Latest Viral Content',
+    description: 'Get the latest viral videos, Facebook blue verification, and free diamond top-ups. Stay updated with trending content from around the world.'
+  },
+  twitter: {
+    title: 'Stay Updated - Latest Viral Content',
+    description: 'Get the latest viral videos, Facebook blue verification, and free diamond top-ups. Stay updated with trending content from around the world.'
+  }
+};
+
 export default function Home() {
   const currentYear = new Date().getFullYear();
   const ways = [
@@ -7,17 +21,20 @@ export default function Home() {
       title: `Viral Video ${currentYear}`,
       description: `${currentYear} সালের সমস্ত ভাইরাল হওয়া ভিডিও`,
       buttonText: 'Collections',
+      bgImage: '/viral.png',
       buttonLink: '/collections',
     },
     {
       title: `Free Facebook Blue Batch Verification ${currentYear}`,
       description: `${currentYear} ফ্রিতে ফেসবুক ব্লু ভেরিফিকেশন করে নিন, সীমিত কয়েকজনই পাবেন!`,
+      bgImage: '/blue-batch.png',
       buttonText: 'Blue Verification',
       buttonLink: '/blue-verification',
     },
     {
       title: `Free Diamond top up ${currentYear}`,
       description: `${currentYear} সালে আমাদের পক্ষ থেকে থাকছে সেরা কয়েকজনের জন্যে ফ্রিতে ফ্রি ফায়ার ডাইমন্ড টপ আপ!`,
+      bgImage: '/free-diamond.png',
       buttonText: 'Free Diamond',
       buttonLink: '/free-diamond',
     },
@@ -43,11 +60,15 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {ways.map((way, index) => (
-            <div key={index} className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col">
-              <div className="p-6 flex-grow">
-                <h3 className="text-xl font-bold text-gray-800 dark:text-white">{way.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-6">{way.description}</p>
+            <div 
+            key={index} 
+            style={{ backgroundImage: `url(${way.bgImage})` }} 
+            className="bg-cover bg-center rounded-xl shadow-lg overflow-hidden items-center justify-between flex flex-col">
+              <div className="p-6 flex flex-col">
+                <h3 className="text-xl font-bold text-white bg-black/70 p-2 rounded-md">⁕ {way.title}</h3>
+                <p className="text-white bg-black/70 p-2 rounded-md mb-6">{way.description}</p>
               </div>
+
               <div className="px-6 pb-6">
                 <Link href={way.buttonLink} className="block w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg text-center">
                     {way.buttonText}

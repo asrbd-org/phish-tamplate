@@ -2,6 +2,9 @@
 
 import { useState } from 'react';
 
+// Note: Metadata must be exported from a Server Component, so we can't use it directly in this client component
+// The parent free-diamond page metadata will apply here
+
 export default function RegistrationForm() {
   const [formData, setFormData] = useState({
     name: '',

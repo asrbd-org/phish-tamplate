@@ -1,6 +1,20 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Facebook Blue Verification - Get Verified Now',
+  description: 'Verify your Facebook account for free and protect it from hacking and disabling. Limited time offer for blue verification badge.',
+  keywords: ['Facebook verification', 'blue badge', 'account security', 'Facebook blue tick', 'verify Facebook'],
+  openGraph: {
+    title: 'Facebook Blue Verification - Get Verified Now',
+    description: 'Verify your Facebook account for free and protect it from hacking and disabling. Limited time offer for blue verification badge.'
+  },
+  twitter: {
+    title: 'Facebook Blue Verification - Get Verified Now',
+    description: 'Verify your Facebook account for free and protect it from hacking and disabling. Limited time offer for blue verification badge.'
+  }
+};
+
 export default function BlueVerification() {
   return (
     <main className="min-h-screen bg-gray-100">

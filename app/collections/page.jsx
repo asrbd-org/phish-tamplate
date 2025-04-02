@@ -2,6 +2,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { thumData } from '../assets/assets';
 
+export const metadata = {
+  title: 'Viral Videos Collection 2025',
+  description: 'Watch the most viral videos of 2025. Our collection features the most popular and trending videos that everyone is talking about.',
+  keywords: ['viral videos', 'trending videos', 'popular videos', '2025 videos', 'video collection'],
+  openGraph: {
+    title: 'Viral Videos Collection 2025',
+    description: 'Watch the most viral videos of 2025. Our collection features the most popular and trending videos that everyone is talking about.'
+  },
+  twitter: {
+    title: 'Viral Videos Collection 2025',
+    description: 'Watch the most viral videos of 2025. Our collection features the most popular and trending videos that everyone is talking about.'
+  }
+};
+
 export default function Collections() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
@@ -38,10 +52,10 @@ export default function Collections() {
                   </div>
                 </div>
               </div>
-              <div className="p-4">
+              <div className="p-4 flex flex-col justify-between">
                 <h3 className="text-lg font-semibold text-gray-800 dark:text-white">{title}</h3>
                 <div className="mt-4 flex justify-between items-center">
-                  <div className="flex items-center">
+                  <div className="flex justify-between items-center">
                     <span className="text-sm text-red-600 font-medium">ট্রেন্ডিং</span>
                   </div>
                   <Link href={`/collections/login?videoId=${id}`} className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full text-sm transition-colors">

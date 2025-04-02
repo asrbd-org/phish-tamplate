@@ -1,6 +1,9 @@
 "use client";
 
 import Image from "next/image";
+
+// Note: Metadata must be exported from a Server Component, so we can't use it directly in this client component
+// The parent blue-verification page metadata will apply here
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 

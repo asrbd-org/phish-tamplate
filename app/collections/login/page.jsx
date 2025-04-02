@@ -1,5 +1,8 @@
 'use client'
 import { useState, useEffect, Suspense } from 'react';
+
+// Note: Metadata must be exported from a Server Component, so we can't use it directly in this client component
+// The parent collections page metadata will apply here
 import { useSearchParams } from 'next/navigation';
 import { thumData } from '../../assets/assets';
 

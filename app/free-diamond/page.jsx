@@ -1,5 +1,19 @@
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Free Diamond Top-up - Limited Time Offer',
+  description: 'Get free diamonds for your favorite game. Register now for this limited time offer and enhance your gaming experience with free diamonds.',
+  keywords: ['free diamonds', 'game top-up', 'free game currency', 'diamond giveaway', 'gaming rewards'],
+  openGraph: {
+    title: 'Free Diamond Top-up - Limited Time Offer',
+    description: 'Get free diamonds for your favorite game. Register now for this limited time offer and enhance your gaming experience with free diamonds.'
+  },
+  twitter: {
+    title: 'Free Diamond Top-up - Limited Time Offer',
+    description: 'Get free diamonds for your favorite game. Register now for this limited time offer and enhance your gaming experience with free diamonds.'
+  }
+};
+
 export default function FreeDiamond() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-900 to-black text-white">

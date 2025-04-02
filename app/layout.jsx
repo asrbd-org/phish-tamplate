@@ -8,14 +8,31 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Stay Updated",
+  title: {
+    default: "Stay Updated - Latest Notifications",
+    template: "%s | Stay Updated"
+  },
   description: "Best place to get updated notifications about the world",
+  keywords: ["updates", "notifications", "viral content", "trending"],
   openGraph: {
     type: "website",
     locale: "en_US",
     alternateLocale: ["en_US", "bn_BD"],
+    title: {
+      default: "Stay Updated - Latest Notifications",
+      template: "%s | Stay Updated"
+    },
+    description: "Best place to get updated notifications about the world",
+    siteName: "Stay Updated"
   },
-  viewport: "width=device-width, initial-scale=1",
+  twitter: {
+    card: "summary_large_image",
+    title: {
+      default: "Stay Updated - Latest Notifications",
+      template: "%s | Stay Updated"
+    },
+    description: "Best place to get updated notifications about the world"
+  },
 };
 
 export default function RootLayout({ children }) {
