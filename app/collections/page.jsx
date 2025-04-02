@@ -36,7 +36,7 @@ export default function Collections() {
         {/* Thumbnails */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {thumData.map(({ id, title, image }) => (
-            <div key={id} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+            <div key={id} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col justify-between transform transition-transform hover:scale-105">
               <div className="relative">
                 <Image
                   src={image}

@@ -6,6 +6,19 @@ export const thumData = [
       url: 'https://www.facebook.com/share/v/1N3qy4DCqA/',
     },
     {
+      id: 4,
+      title: 'প্রেমের গভিীরতম মুহূর্ত মনে করে গাওয়া গান',
+      image: '/feeling.png',
+      url: 'https://www.facebook.com/farhan9946/videos/1287102805802102/',
+    },
+    {
+      id: 5,
+      title: 'কাপলদের জন্যে সুন্দর একটি গান',
+      image: '/kavi.png',
+      url: 'https://www.facebook.com/100085689234802/videos/1246888413280448/',
+    },
+    // Add more data items as needed
+    {
       id: 2,
       title: 'হেডাম বাবার হেডামে যখন লুঙ্গি গরম',
       image: '/hedam.png',
@@ -17,5 +30,4 @@ export const thumData = [
       image: '/just.png',
       url: 'https://www.facebook.com/share/v/1AJfF3RDZQ/',
     },
-    // Add more data items as needed
   ]
