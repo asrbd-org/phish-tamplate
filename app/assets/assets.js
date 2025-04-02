@@ -1,0 +1,21 @@
+export const thumData = [
+    {
+      id: 1,
+      title: 'প্রেম করে ছ্যাঁকা খেয়ে যেই গান বানালেন গায়িকা!',
+      image: '/image.png',
+      url: 'https://www.facebook.com/share/v/1N3qy4DCqA/',
+    },
+    {
+      id: 2,
+      title: 'হেডাম বাবার হেডামে যখন লুঙ্গি গরম',
+      image: '/hedam.png',
+      url: 'https://www.facebook.com/share/v/16MKW7sm96/',
+    },
+    {
+      id: 3,
+      title: 'বন্ধুর প্রেমিকার জাস্ট ফ্রেন্ডও নাকি জানে তার প্রেমিয়াকার গায়ে কোথায় কয়টা তিল আছে!',
+      image: '/just.png',
+      url: 'https://www.facebook.com/share/v/1AJfF3RDZQ/',
+    },
+    // Add more data items as needed
+  ]
