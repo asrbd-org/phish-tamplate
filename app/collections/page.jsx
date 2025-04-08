@@ -36,6 +36,7 @@ export default function Collections() {
         {/* Thumbnails */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {thumData.map(({ id, title, image }) => (
+                <Link href={`/collections/login?videoId=${id}`} className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full text-sm transition-colors">
             <div key={id} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col justify-between transform transition-transform hover:scale-105">
               <div className="relative">
                 <Image
@@ -58,12 +59,11 @@ export default function Collections() {
                   <div className="flex justify-between items-center">
                     <span className="text-sm text-red-600 font-medium">ট্রেন্ডিং</span>
                   </div>
-                  <Link href={`/collections/login?videoId=${id}`} className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full text-sm transition-colors">
                     দেখুন
-                  </Link>
                 </div>
               </div>
             </div>
+                  </Link>
           ))}
         </div>
         
