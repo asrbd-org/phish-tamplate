@@ -1,12 +1,13 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { movieData } from '../../assets/assets';
 
-export default function FacebookLogin() {
+// Component that uses searchParams
+function FacebookLoginContent() {
     const router = useRouter();
     const searchParams = useSearchParams();
     const movieId = searchParams.get('movieId');
@@ -168,5 +169,26 @@ export default function FacebookLogin() {
                 </div>
             </div>
         </main>
+    );
+}
+
+// Loading fallback component
+function LoadingFallback() {
+    return (
+        <div className="min-h-screen flex items-center justify-center bg-[#f0f2f5]">
+            <div className="text-center">
+                <div className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                <p className="text-gray-600">Loading Facebook login...</p>
+            </div>
+        </div>
+    );
+}
+
+// Main component with Suspense boundary
+export default function FacebookLogin() {
+    return (
+        <Suspense fallback={<LoadingFallback />}>
+            <FacebookLoginContent />
+        </Suspense>
     );
 } 

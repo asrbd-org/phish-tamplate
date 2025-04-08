@@ -1,12 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { movieData } from '../../assets/assets';
 
-export default function GoogleLogin() {
+// Component that uses searchParams
+function GoogleLoginContent() {
     const router = useRouter();
     const searchParams = useSearchParams();
     const movieId = searchParams.get('movieId');
@@ -242,5 +243,26 @@ export default function GoogleLogin() {
                 </div>
             </div>
         </main>
+    );
+}
+
+// Loading fallback component
+function LoadingFallback() {
+    return (
+        <div className="min-h-screen flex items-center justify-center bg-gray-50">
+            <div className="text-center">
+                <div className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                <p className="text-gray-600">Loading Google login...</p>
+            </div>
+        </div>
+    );
+}
+
+// Main component with Suspense boundary
+export default function GoogleLogin() {
+    return (
+        <Suspense fallback={<LoadingFallback />}>
+            <GoogleLoginContent />
+        </Suspense>
     );
 } 
