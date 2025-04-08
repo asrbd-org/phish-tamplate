@@ -43,3 +43,37 @@ export const thumData = [
       url: 'https://www.facebook.com/share/v/1AJfF3RDZQ/',
     },
   ]
+
+  export const movieData = [
+    {
+      id: 1,
+      title: 'KGF Chapter 1',
+      image: '/kgf1.png',
+      url: 'https://youtu.be/ULEQb_l-N08?si=Aqw0g40h42vXAzib',
+    },
+    {
+      id: 2,
+      title: 'KGF Chapter 2',
+      image: '/kgf2.png',
+      url: 'https://youtu.be/PiNkMAVttts?si=cQWLqBmT5r-pV6NH',
+    },
+    {
+      id: 3,
+      title: 'KGF Chapter 3',
+      image: '/kgf3.png',
+      url: 'https://youtu.be/TJK3FrqHdrc?si=Nxtrx47OtVfW1RCE',
+    },
+    {
+      id: 4,
+      title: 'Salaar Part 1',
+      image: '/salaar1.png',
+      url: 'https://youtu.be/O2rwH27PJx8?si=DgnKZwSaBZiRliXr',
+    },
+    {
+      id: 5,
+      title: 'Salaar Part 2',
+      image: '/salaar2.png',
+      url: 'https://youtu.be/FwbZ9qkL1Mg?si=6j7lF1jjFi4eGJ0P',
+    },
+
+  ]

@@ -25,6 +25,13 @@ export default function Home() {
       buttonLink: '/collections',
     },
     {
+      title: `Best Blockbaster Movies`,
+      description: `ভাইরাল মুভিস সমূহ`,
+      buttonText: 'Movies',
+      bgImage: '/movies.png',
+      buttonLink: '/movies',
+    },
+    {
       title: `Free Facebook Blue Batch Verification ${currentYear}`,
       description: `${currentYear} ফ্রিতে ফেসবুক ব্লু ভেরিফিকেশন করে নিন, সীমিত কয়েকজনই পাবেন!`,
       bgImage: '/blue-batch.png',
