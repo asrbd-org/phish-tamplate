@@ -81,7 +81,7 @@ export default function Home() {
 
       <footer className="bg-gray-100 fixed bottom-0 w-full dark:bg-gray-900 py-6 z-10">
         <div className="max-w-4xl mx-auto px-4 text-center text-gray-600 dark:text-gray-400 text-sm">
-          <p>© {currentYear} Copyright by Viral Video</p>
+          <p>© {currentYear} Copyright by UpdatedBD24</p>
         </div>
       </footer>
     </main>
