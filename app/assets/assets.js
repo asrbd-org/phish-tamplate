@@ -6,6 +6,18 @@ export const thumData = [
       url: 'https://www.facebook.com/share/v/1N3qy4DCqA/',
     },
     {
+      id: 6,
+      title: 'Tag Your Love',
+      image: '/love1.png',
+      url: 'https://www.facebook.com/share/v/15KJep4RBE/',
+    },
+    {
+      id: 7,
+      title: 'Cute Couple',
+      image: '/cutec.png',
+      url: 'https://www.facebook.com/61571802845424/videos/1305318580702360/',
+    },
+    {
       id: 4,
       title: 'প্রেমের গভিীরতম মুহূর্ত মনে করে গাওয়া গান',
       image: '/feeling.png',
