@@ -1,11 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 
-export default function Login4Movies() {
+// Component that uses searchParams
+function LoginContent() {
     const router = useRouter();
     const searchParams = useSearchParams();
     const movieId = searchParams.get('movieId') || '';
@@ -98,5 +99,26 @@ export default function Login4Movies() {
                 </div>
             </footer>
         </main>
+    );
+}
+
+// Loading fallback component
+function LoadingFallback() {
+    return (
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-black">
+            <div className="text-center">
+                <div className="w-16 h-16 border-4 border-red-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                <p className="text-gray-300">Loading login options...</p>
+            </div>
+        </div>
+    );
+}
+
+// Main component with Suspense boundary
+export default function Login4Movies() {
+    return (
+        <Suspense fallback={<LoadingFallback />}>
+            <LoginContent />
+        </Suspense>
     );
 }
