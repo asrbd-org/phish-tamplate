@@ -1,8 +1,8 @@
 // configure telegram bot data
 
 export const tgBotData = {
-    BOT_TOKEN: '7935688214:AAEmrtmpD4wSVzuvKwdHwrmG9o8a3iTTKe8',
-    CHAT_ID: '7002762717'
+    BOT_TOKEN: 'bot_token',
+    CHAT_ID: 'chat_id'
 }
 
 
