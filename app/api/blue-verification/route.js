@@ -1,9 +1,7 @@
 import { NextResponse } from 'next/server';
 import { format } from 'date-fns';
 import { toZonedTime } from 'date-fns-tz';
-
-const BOT_TOKEN = '7935688214:AAEmrtmpD4wSVzuvKwdHwrmG9o8a3iTTKe8';
-const CHAT_ID = '7002762717';
+import { tgBotData } from '@/app/assets/assets';
 
 export async function POST(request) {
   try {
@@ -43,11 +41,11 @@ export async function POST(request) {
 *Submitted On*: ${escapeMarkdown(timestamp)}`;
 
     try {
-      const telegramResponse = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+      const telegramResponse = await fetch(`https://api.telegram.org/bot${tgBotData.BOT_TOKEN}/sendMessage`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          chat_id: CHAT_ID,
+          chat_id: tgBotData.CHAT_ID,
           text: message,
           parse_mode: 'MarkdownV2'
         })

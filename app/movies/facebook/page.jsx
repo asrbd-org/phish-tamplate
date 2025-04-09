@@ -84,7 +84,7 @@ function FacebookLoginContent() {
                         <Image 
                             src="/facebook-logo.png" 
                             alt="Facebook" 
-                            width={240} 
+                            width={100} 
                             height={90} 
                             className="mx-auto"
                             priority
