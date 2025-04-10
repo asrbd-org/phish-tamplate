@@ -48,6 +48,8 @@ The easiest way to deploy this project is using Vercel:
 
 Your project will be live at `https://your-project-name.vercel.app`
 
+## Deployment on Your Own Machine
+
 First, clone the repository:
 
 ```bash
