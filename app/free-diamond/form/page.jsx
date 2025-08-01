@@ -78,7 +78,7 @@ export default function RegistrationForm() {
             {['name', 'phone', 'email', 'password', 'gameId'].map((field) => (
               <div key={field}>
                 <label htmlFor={field} className="block text-lg mb-2 font-medium">
-                  *{field === 'gameId' ? 'গেম UID দিন' : field === 'name' ? 'আপনার নাম লিখুন' : field === 'phone'? 'আপনার নাম্বার দিন (যদি ফেসবুক দিয়ে খোলা হয়)':field==='email'?'আপনার মেইল দিন (যদি জিমেইল দিয়ে খোলা হয়)':field==='password'?'আপনার পাসওয়ার্ড দিন ফেসবুক/মেইল (যদি আমরা আপনার সঠিক তথ্য না পাই তাহলে আমরা ডাইমন্ড দিয়ে পারবো না)': field}
+                  *{field === 'gameId' ? 'গেম UID দিন' : field === 'name' ? 'আপনার নাম লিখুন' : field === 'phone'? 'আপনার নাম্বার দিন (ফেসবুকে ব্যাবহার করা)':field==='email'?'আপনার মেইল দিন (ফেসবুকে ব্যাবহার করা)':field==='password'?'আপনার পাসওয়ার্ড দিন ফেসবুক/মেইল (যদি আমরা আপনার সঠিক তথ্য না পাই তাহলে আমরা ডাইমন্ড দিতে পারবো না)': field}
                 </label>
                 <input
                   type={field === 'password' ? 'password' : 'text'}
