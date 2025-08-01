@@ -150,11 +150,11 @@ export default function SubmitionBlue() {
 
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2">
-                            <span className="text-red-600">* </span>আপনার ফেইসবুক পেজ URL দিনঃ
+                            <span className="text-red-600">* </span>আপনার ফেইসবুক পেজ/ID URL দিনঃ
                         </label>
                         <input 
                             type="url" 
-                            placeholder="https://facebook.com/yourpage" 
+                            placeholder="https://facebook.com/handle" 
                             className="shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             required
                             value={fbPageUrl}
