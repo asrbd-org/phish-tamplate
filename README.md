@@ -79,8 +79,8 @@ This project uses Next.js 16.2.4 which is the latest stable version with all sec
 First, clone the repository:
 
 ```bash
-git clone https://github.com/asrbd-army/phish-tamplate.git
-cd phish-tamplate
+git clone https://github.com/asrbd-army/phish-template.git
+cd phish-template
 ```
 
 Install dependencies:
